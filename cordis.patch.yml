@@ -1,0 +1,20 @@
+# @local/dsh-long-message-disclosure bundle patch.
+#
+# One Host row publishes the runtime disclosure policy (threshold, preview
+# budget, crop strategy, copy overrides) on the same-origin config route.
+# package.json `dsh.client` makes the Web app load the Client half, which
+# replaces the `text` cell of the message-body text seat with a composable
+# disclosure container.
+- insert:
+    - id: dsh-long-message-disclosure
+      name: '@local/dsh-long-message-disclosure'
+      config:
+        enabled: true
+        threshold: 1200
+        previewChars: 480
+        previewLines: 8
+        previewStrategy: boundary
+        labels:
+          expand: ''
+          collapse: ''
+          count: ''
