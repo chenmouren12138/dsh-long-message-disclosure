@@ -9,6 +9,20 @@
 切片，完整正文不进入 DOM，因此也不进入可访问性树与 Tab 序列；展开/收起时保持触发器在视口中的位置，
 避免长会话回看时的滚动跳变。
 
+## 安装（其他电脑）
+
+本插件以 DSH profile bundle 分发，从 Git 仓库安装即可：
+
+1. 打开 DSH 的「插件」页 → 「添加插件」。
+2. 填入仓库地址（GitHub 托管的仓库地址会被 DSH 识别为 git 依赖）：
+
+   `https://github.com/chenmouren12138/dsh-long-message-disclosure`
+
+3. 安装完成后刷新页面；发送一段超过 `threshold`（默认 1200 字）的消息即可看到折叠效果。
+
+> 包内声明了 `private: true`，仅用于 Git 安装，不发布到 npm。
+> Host 半需要一个可用的 `webServer` 服务来发布运行时配置（Web / Desktop 版 DSH 默认具备）；缺失时 Client 使用内置默认策略。
+
 ## 挂载点（为什么是这个槽位）
 
 | | |

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "dsh-long-message-disclosure",
+    "description": "Overlong user messages in the conversation timeline collapse into a meaningful cropped preview behind a WAI-ARIA Disclosure trigger. The full body stays unmounted while collapsed, and expanding or collapsing keeps the viewport anchored. Threshold, preview strategy, and copy are runtime-configurable."
+  }
+}

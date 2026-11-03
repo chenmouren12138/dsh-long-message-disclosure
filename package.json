@@ -4,7 +4,7 @@
   "private": true,
   "description": "长消息渐进披露：在对话时间线中把超过阈值的用户消息正文默认折叠为裁剪预览，通过 WAI-ARIA Disclosure 触发器展开或收起；折叠态不挂载完整正文，展开保持视口锚定。",
   "type": "module",
-  "license": "MIT",
+  "license": "Unlicense",
   "icon": "./icon.svg",
   "exports": {
     ".": "./index.js",
